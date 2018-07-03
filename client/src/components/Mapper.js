@@ -14,7 +14,7 @@ class Mapper extends Component {
     if (this.state.visible) {
       userDivs = this.props.data.map((d,i) => {
         return (
-          <div key={i}>
+          <div className='mappedMovie' key={i}>
             <div>Title: {d[this.props.field]}</div>
             {/* <div>Genre: {d[this.props.field1]}</div> */}
             <div>DirectorL {d[this.props.field2]}</div>

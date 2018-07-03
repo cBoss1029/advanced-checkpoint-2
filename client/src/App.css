@@ -22,3 +22,24 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.navContainer li {
+  display: inline-block;
+  margin: 15px;
+}
+
+.mappedMovie {
+  margin-bottom: 15px;
+}
+input {
+  margin: 5px;
+}
+form button {
+  width: 60px;
+  padding: 7px;
+  font-size: 1em;
+  font-weight: bold;
+}
+button {
+  margin-left: 5px;
+}
