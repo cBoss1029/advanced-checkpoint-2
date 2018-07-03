@@ -1,8 +1,12 @@
 import {connect} from 'react-redux';
 import Movie from '../components/Movie';
-import {loadMovie} from '../actions';
+import {loadMovie} from '../actions/index';
 
-const mapStateToProps=(state)=>({movie: state.movie});
+function mapStateToProps(state){
+    return{
+        movie: state.movie
+    }
+}
 const mapDispatchToProps=(dispatch)=>({
     loadMovie: (id) => {dispatch(loadMovie(id))}
 });

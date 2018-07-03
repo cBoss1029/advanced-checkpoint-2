@@ -7,7 +7,7 @@ function movies(state = [], action) {
   return state;
 }
 function movie(state = [], action) {
-  if (action.type === 'GET_MOVIE_DONE') {
+  if (action.type === "GET_MOVIE_DONE") {
     return action.value;
   }
   return state;

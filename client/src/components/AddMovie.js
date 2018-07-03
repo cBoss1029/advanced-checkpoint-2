@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 
 
 class AddMovie extends Component {
-    constructor(props){
-        super(props);
+    constructor(){
+        super();
         this.state = {
             movie: {
                 title: '',
@@ -64,7 +64,7 @@ class AddMovie extends Component {
                 });
               }} />
             </div>
-            <button>Create</button>
+            <button>Add</button>
           </form>
 
             </div>

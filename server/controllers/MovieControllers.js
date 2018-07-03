@@ -23,3 +23,16 @@ module.exports.create =  function create(request, response) {
     });
 
 }
+
+
+module.exports.remove =  function remove(request, response) {
+    const id = request.params.id;
+    MovieModel.findByIdAndRemove(id).exec()
+    .then(doc => {
+        if(!doc) {return response.status(404).end();}
+        return response.status(204).end();
+    })
+    .catch(err => next(err))
+        
+        // return response.json();
+}

@@ -6,7 +6,7 @@ import {loadMovies} from './actions';
 
 function mapDispatchToProps(dispatch) {
   return {
-    loadMovies: function(dispatch){
+    loadMovies: function(){
       dispatch(loadMovies())
     }
   };
